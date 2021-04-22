@@ -180,3 +180,12 @@ h1 {
   color: var(--sec-c);
   transform: 0.3 ease;
 }
+
+/* Footer */
+#Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+}
