@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+:root {
+  --prim-c: rgba(255, 255, 255, 0.8);
+  --sec-c: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  color: var(--prim-c);
+  font-family: "Space Grotesk", sans-serif;
+}
+/* Utility class */
+
+.hover:hover {
+  cursor: pointer;
+  color: var(--prim-c);
+  transition: 0.3s ease;
+}
+.box-shadow:hover {
+  z-index: 6;
+  box-shadow: 0 0 35px 2px #fff;
+  transition: 0.3s ease;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/pexels-egor-kamelev-920157.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  overflow: hidden;
+}
