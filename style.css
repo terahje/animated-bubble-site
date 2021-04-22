@@ -102,7 +102,7 @@ h1 {
   font-family: 'Space Grotesk', sans-serif;
 }
 
-@keyframes plus {
+@keyframes pulse {
   0% {
     opacity: 0;
   }
@@ -117,9 +117,66 @@ h1 {
   }
 }
 
-.btn-plus {
-  animation: plus 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+.btn-pulse {
+  animation: pulse 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
-.btn-plus:hover {
+.btn-pulse:hover {
   animation: none;
+}
+
+/* Social */
+
+#Social {
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 10vw;
+  height: 80vh;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#Social:hover {
+  border: 1px solid #333;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin: 1rem;
+}
+
+.fab {
+  color: var(--sec-c);
+  transform: 0.3 ease;
+}
+
+/* Contact section */
+
+#Contact {
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 10vw;
+  height: 80vh;
+  border-radius: 10px 0px 0px 10px;
+  transition: 0.3 ease;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin: 1rem;
+}
+
+.fas {
+  color: var(--sec-c);
+  transform: 0.3 ease;
 }
