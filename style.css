@@ -189,3 +189,74 @@ h1 {
   text-align: center;
   letter-spacing: 1px;
 }
+
+/* bubbles animation */
+#Bubbles img {
+  width: 85px;
+  height: 100px;
+  opacity: 0.3;
+  animation: bubble 7s linear infinite;
+}
+
+#Bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0.5;
+  }
+}
+
+#Bubbles img:nth-child(1) {
+  animation-delay: 1.5s;
+  width: 20px;
+  height: 25px;
+}
+#Bubbles img:nth-child(2) {
+  animation-delay: 1s;
+  width: 40px;
+  height: 45px;
+}
+#Bubbles img:nth-child(3) {
+  animation-delay: 3s;
+}
+#Bubbles img:nth-child(4) {
+  animation-delay: 2.5s;
+  width: 30px;
+  height: 35px;
+}
+#Bubbles img:nth-child(5) {
+  animation-delay: 8s;
+  width: 50px;
+  height: 55px;
+}
+#Bubbles img:nth-child(6) {
+  animation-delay: 2s;
+  width: 30px;
+  height: 35px;
+}
+#Bubbles img:nth-child(7) {
+  animation-delay: 5s;
+  width: 50px;
+  height: 55px;
+}

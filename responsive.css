@@ -1,0 +1,8 @@
+/* Desktop */
+
+@media (min-width: 1280px) {
+  #nav,
+  #Header {
+    max-width: 1280px;
+  }
+}
