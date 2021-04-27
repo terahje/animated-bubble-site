@@ -6,3 +6,160 @@
     max-width: 1280px;
   }
 }
+
+/* Tablet  */
+
+@media (max-width: 800px) {
+  /* Nav */
+  label {
+    font-size: 1.2rem;
+  }
+
+  #nav .btn {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    color: var(--prim-c);
+    border: 2px solid var(--prim-c);
+  }
+  /* Header */
+  #Header {
+    width: 250px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  /* Social & Contact */
+  #Social,
+  #Contact {
+    height: 60vh;
+    top: 20%;
+  }
+  /* Footer */
+  #Footer {
+    opacity: 0.75;
+  }
+}
+
+/* Tablet Landscape */
+@media (max-width: 1024px) and (orientation: Landscape) {
+  .btn {
+    color: var(--prim-c);
+    border: 2px solid var(--prim-c);
+  }
+  #Header {
+    left: 10%;
+  }
+  #Social,
+  #Contact {
+    height: 60vh;
+    top: 20%;
+    border: 1px solid #333;
+  }
+
+  #Footer {
+    opacity: 0.75;
+  }
+}
+
+/* Phone 400px*/
+@media (max-width: 450px) {
+  /* nav */
+  #nav {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  #nav #logo {
+    height: 50px;
+    width: 45px;
+  }
+
+  #Header {
+    top: 40%;
+    left: 20%;
+    min-width: 200px;
+  }
+  h4 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 30vh;
+  }
+
+  #Social i,
+  #Contact i {
+    font-size: 1.4rem;
+  }
+
+  #Footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile landscape */
+
+@media (max-width: 900px) and (orientation: landscape) {
+  #nav {
+    width: 80%;
+    padding: 0.5rem;
+  }
+
+  #nav #logo {
+    height: 50px;
+    width: 45px;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+  #nav .btn,
+  #Header .btn {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    color: var(--prim-c);
+    border: 2px solid var(--prim-c);
+  }
+
+  /* Header */
+  #Header {
+    top: 45%;
+    left: 35%;
+    max-width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    margin-top: 20vh;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  #Social i,
+  #Contact i {
+    font-size: 1.4rem;
+  }
+
+  #Footer {
+    font-size: 0.8rem;
+  }
+}
